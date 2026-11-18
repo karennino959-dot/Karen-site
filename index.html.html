@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Personal website</title>
+      <style type = "text/css">
+	@media all{
+         div     { text-align: center;
+                   width: 50%;
+                   position: relative; 
+                   left: 25%;
+                   border-width: 5px; }
+	  body  {background-color: #A1CBDD;
+		 font-size: 14pt;
+		 color: White ;
+		 font-family: garamond, serif;}
+	  p     { font-size: 15pt;
+                 color: Navy ;
+                 text-indent: 1em;
+                 font-family: Georgia,serif; }
+	.dark  {font-family: impact ; color: Black; } 
+        .solid  { border-style: solid; }
+	.black  {border-color: Black; }
+	}
+         @media print
+         {
+            body  { background-color: White; }
+            h1    { color: Black; }
+            p     { font-size: 14pt;
+                    color: Black;
+                    font-family: "times new roman", times, serif; }
+         } 
+      </style>
+	<script>
+         var name;
+         var now = new Date(); 
+         var hour = now.getHours(); 
+
+         name = window.prompt( "Please enter your name: " );
+
+         if ( hour < 12 )
+            document.write( "<p>Good Morning, " );
+
+         if ( hour >= 12 )
+         {
+            hour = hour - 12;
+
+            if ( hour < 6 )
+               document.write( "<p>Good Afternoon, " );
+
+            if ( hour >= 6 )
+               document.write( "<p>Good Evening, " );
+         } 
+
+         document.writeln(name + 
+            ", welcome to my website </p>" );
+
+	</script>
+   </head>
+   <body>
+      <h1><span class = dark> Karen's Website </span></h1>
+      <p>
+	Hello my name is Karen Nino. I am currently a computer science senior.  I enjoy going on walks, reading, doing my makeup. I'm the owner of a female german shepherd, she is about to turn 8 years old. I want to go into the cybersecurity field after graduation.
+      <p>
+<p>The link below is of a website I use to study using the pomodoro technique:<p>
+<p><a href = "https://app.flocus.com/">Flocus</a></p>
+
+      <p>
+         <img src = "Harry potter image.jpg" width = "280" height = "230"
+            alt = "Harry Potter image ">        
+      </p>
+      <h2><div class = "solid black "> Travel Wishlist </div></h2>
+      <ul>
+         <li>Thailand</li>
+         <li>Japan</li>
+         <li>Greece</li>
+         <li>Italy</li>
+         <li>Korea</li>
+       </ul>
+      <h1><div class = "solid black"> Coffee Shops Around the World </div></h1>
+ 
+      <table border = "1">
+         <thead>
+            <tr>
+
+                  <img src = "coffe shop.jpg" width = "205" 
+                     height = "167" alt = "Coffee Shop inspo">
+               </th>
+            </tr>
+            <tr>
+               <th> Country </th>
+               <th> Coffee shop name </th>
+               <th> Description</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th>Bangkok, Thailand</th>
+               <td>Roots Coffee Roasters</td>
+               <td>Pioneer of Thailand's specialty coffee.Sleek, minimalist, and deeply community-focused.</td>
+            </tr>
+            <tr>
+               <th>Tokyo, Japan</th>
+	       <td>Koffee Mameya</td>
+               <td>An omakase-style coffee "pharmacy" where barista consultants wearwhite coats.</td>
+            </tr>
+            <tr>
+               <th>Athens, Greece</th>
+               <td>Samba Coffee Roasters</td>
+               <td>High-energy, deeply knowledgeable specialty house blending ancient history with ultra-modern brewing tech.</td>
+            </tr>
+            <tr>
+               <th>Rome, Italy</th>
+               <td>La Casa del Caffe Tazza d'Oro</td>
+               <td>Fast-paced, chaotic, historic, and iconic. No slow-sipping laptops here—you stand at the bar.</td>
+            </tr>
+            <tr>
+               <th>Seoul, Korea</th>
+               <td>Leedorim Coffee & Bakery</td>
+               <td>Hyper-aesthetic, multi-level architectural gem where industrial design meets traditional Korean hanok framing.</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
